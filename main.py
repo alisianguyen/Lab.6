@@ -8,8 +8,13 @@ def encode(password):
         enc_password = enc_password + new_num
     return enc_password
 
-
-
+# Alisia Nguyen
+def decode(password):
+    dec_password = ''
+    for num in enc_password:
+        new_num = str(int(num) - 3)
+        dec_password = dec_password + new_num
+    return dec_password
 
 while True:
     print("Menu")
@@ -31,13 +36,7 @@ while True:
     elif option == 3:
         break
 
-def encode(password):
-    global enc_password
-    enc_password = ''
-    for num in password:
-        new_num = str(int(num) + 3)
-        enc_password = enc_password + new_num
-    return enc_password
+
 
 
 
